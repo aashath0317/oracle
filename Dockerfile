@@ -2,6 +2,7 @@ FROM debian:latest
 
 RUN apt-get update
 RUN apt-get upgrade -y
+RUN apt-get install pip3
 COPY requirements.txt .
 
 RUN pip3 install --no-cache-dir -r requirements.txt
